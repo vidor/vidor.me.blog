@@ -12,9 +12,14 @@
   <body <?php body_class(); ?>>
   	<div id="wrapper">
       <div id="header">
-        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        <p id="description"><?php bloginfo( 'description' ); ?></p>
-        <?php if ( has_nav_menu( 'menu' ) ) : wp_nav_menu(); else : ?>
-          <ul><?php wp_list_pages( 'title_li=&depth=-1' ); ?></ul>
-        <?php endif; ?>
+      	<div id="logo">
+	        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+	        <p id="description"><?php bloginfo( 'description' ); ?></p>
+	        <?php if ( has_nav_menu( 'menu' ) ) : wp_nav_menu(); else : ?>
+	          <ul><?php wp_list_pages( 'title_li=&depth=-1' ); ?></ul>
+	        <?php endif; ?>
+        </div><!-- logo -->
+        <div id="search-form">
+        	<?php get_search_form(); ?>
+        </div><!-- search-form -->
       </div><!-- header -->

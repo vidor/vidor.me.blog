@@ -113,6 +113,10 @@ a:hover {
 
 /* =header
 -----------------------------------*/
+#header {
+	height: 120px;
+}
+
 #header h1 {
 	margin: 40px 0;
 }
@@ -131,6 +135,16 @@ a:hover {
 	display: none;
 }
 
+#header #logo {
+	float: left;
+}
+
+#header #search-form {
+	float: right;
+	height: 120px;
+	line-height: 120px;
+}
+
 /* =content
 -----------------------------------*/
 #content .post {
@@ -138,6 +152,7 @@ a:hover {
 	padding: 20px;
 	border: 4px solid #FCFCFC;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	position: relative;
 }
 
 
@@ -145,5 +160,17 @@ a:hover {
 	font-size: 30px;
 	margin-bottom: 10px;
 	font-family: Helvetica;
+}
+
+#content .post .post-format {
+	width: 49px;
+	height: 40px;
+	position: absolute;
+	left: -50px;
+	background: url(images/post-formats.png) top left;
+}
+
+#content .post.format-image .post-format {
+	background-position-y: -120px;
 }
 

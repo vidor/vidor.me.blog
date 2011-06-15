@@ -1,6 +1,8 @@
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <div <?php post_class(); ?>>
+          	<div class="post-format"> </div>
             <h2><a href="<?php the_permalink(); ?>"><?php if(has_post_format('image')){echo 'image:';}?><?php the_title(); ?></a></h2>
+            <?php echo get_the_date();?>
             <?php the_content(); ?>
             <?php if ( !is_singular() && get_the_title() == '' ) : ?>
               <a href="<?php the_permalink(); ?>">(more...)</a>
