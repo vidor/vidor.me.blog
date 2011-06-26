@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6 {clear:both;}
 /* =base
 ------------------------------*/
 body {
-	background: gray;
+	background: gray url(images/bg-body.png) left top;
 	text-align: center; /* for ie6 align #warpper center */
 	font-size: 12px;
 	font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -92,14 +92,23 @@ a:hover {
 /* =layout
 ----------------------------- */
 #wrapper {
-	width: 900px;
+	width: 980px;
 	margin: 20px auto 0 auto;
-	background: white;
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
-	border-radius: 8px;
-	text-align: left;
+	border-radius: 8px;	
+	background: url(images/bg-wrapper.png);
+	-webkit-box-shadow: 0 2px 3px rgba(78, 68, 60, 0.3);
+	-moz-box-shadow: 0 2px 3px rgba(78, 68, 60, 0.3);
+	box-shadow: 0 2px 3px rgba(78, 68, 60, 0.3);		
+}
+#wrapper-inner {
+	width: 900px;
 	padding: 40px;
+	text-align: left;
+	
+
+
 }
 
 
@@ -182,6 +191,7 @@ a:hover {
 
 
 #content .post {
+	position: relative;
 	width: 900px;
 	padding: 40px 0;
 	display: block;
@@ -192,7 +202,7 @@ a:hover {
 
 #content .post h2 { /* the post title */
 	font-size: 30px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	font-family: Helvetica;
 }
 
@@ -202,9 +212,15 @@ a:hover {
 	width: 250px;
 }
 
+
 #content .post .post-aside li {
 	list-style-type: none;
+	margin: 0;
+	width: 200px;
+	padding: 5px 0;
+	
 }
+
 
 #content .post .post-aside .post-format {
 	background: url(images/post-formats.png) left top no-repeat;
@@ -216,7 +232,7 @@ a:hover {
 }
 
 #content .post .post-aside .post-meta {
-	margin-top: 12px;
+	margin-top: 22px;
 }
 
 #content .post .post-body {
@@ -228,13 +244,34 @@ a:hover {
 	background-position-x: -42px;
 }
 
+#content .more-link {
+	position: absolute;
+	left: 0px;
+	bottom: 40px;
+}
+
 /*
  * =footer
  */
  
 #footer {
+	width: 900px;
+	padding: 0 40px;
 	height: 300px;
-	background: url(images/bg-footer-top.jpg) left top repeat-x;	
+	background: url(images/bg-footer.png) left top;	
+	margin: 0px 0 40px 0;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+#footer-extra {
+	height: 48px;
+	background: url(images/logo-btm.png) top center no-repeat;
+	margin-bottom: 20px;
 }
 
 

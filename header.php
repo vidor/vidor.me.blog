@@ -11,10 +11,11 @@
   </head>
   <body <?php body_class(); ?>>
   	<div id="wrapper">
-      <div id="header">      	
-      	<div id="logo">
-	        <h1><a href="<?php bloginfo('url'); ?>"><span><?php bloginfo( 'name' ); ?></span></a></h1>
-	        <p id="description"><?php bloginfo( 'description' ); ?></p>
-        </div><!-- logo -->
-        <?php wp_nav_menu( array('menu' => 'Vidor Nav','container' => '', 'walker' => new description_walker() )); ?>
-      </div><!-- header -->
+  	  <div id="wrapper-inner">
+	      <div id="header">      	
+	      	<div id="logo">
+		        <h1><a href="<?php bloginfo('url'); ?>"><span><?php bloginfo( 'name' ); ?></span></a></h1>
+		        <p id="description"><?php bloginfo( 'description' ); ?></p>
+	        </div><!-- logo -->
+	        <?php wp_nav_menu( array('menu' => 'Vidor Nav','container' => '', 'walker' => new description_walker() )); ?>
+	      </div><!-- header -->

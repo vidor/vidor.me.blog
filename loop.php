@@ -25,7 +25,7 @@
 	 * Without further ado, the loop:
 	 */ ?>
 	 
-<?php $post_formats = array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat');?>
+<?php global $post_formats;//place in functions.php ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
@@ -56,3 +56,5 @@
 					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?></div>
 				</div><!-- #nav-below -->
 <?php endif; ?>
+
+

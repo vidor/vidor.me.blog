@@ -13,7 +13,8 @@
     'after_title' => '</h4>') );
 	
 // Add Post Format Support
-add_theme_support( 'post-formats', array( 'standard', 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat' ) );	
+$post_formats = array( 'standard', 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat', 'weibo' );
+add_theme_support( 'post-formats',  $post_formats);	
 
 add_action('get_search_form', 'get_vidor_search_form');
 
