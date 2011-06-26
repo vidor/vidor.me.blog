@@ -4,6 +4,9 @@
 		
     </div><!-- footer -->
     </div><!-- #warpper -->
-    <div id="footer-extra"></div>
-  </body>
+    <div id="footer-extra">
+    	
+    </div>   
+    
+   </body>
 </html>

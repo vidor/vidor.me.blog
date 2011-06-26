@@ -40,8 +40,7 @@ h1,h2,h3,h4,h5,h6 {clear:both;}
 
 .widgets {margin-bottom:2em; border-bottom:1px solid #ddd;}
 .widget {margin-bottom:2em;}
-.pagination {text-align:center; margin:2em auto 1em auto;}
-.pagination a {padding:3px 8px; border: 1px solid #ddd;}
+
 
 .alignleft {display:inline; float:left; margin:0 1em 1em 0;}
 .alignright {display:inline; float:right; margin:0 0 1em 1em;}
@@ -247,9 +246,34 @@ a:hover {
 #content .more-link {
 	position: absolute;
 	left: 0px;
-	bottom: 40px;
 }
 
+/**
+ * =pagination
+ */
+.pagination {
+	text-align:center; 
+	padding: 20px 0;
+	border-top: 4px solid #466964;
+	border-bottom: 4px solid #466964;
+}
+.pagination a {
+	padding:3px 8px; 
+	margin: 0 5px;
+	background: #466964;
+	color: white;
+	border-radius: 12px;	
+}
+
+.pagination span {
+	padding: 3px 8px;
+	border: 1px solid #466964;
+	border-radius: 12px;
+}
+
+.pagination span.dots {
+	border: none;
+}
 /*
  * =footer
  */
