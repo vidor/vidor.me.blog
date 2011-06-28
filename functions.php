@@ -16,7 +16,7 @@
 $post_formats = array( 'standard', 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat', 'weibo' );
 add_theme_support( 'post-formats',  $post_formats);	
 
-add_action('get_search_form', 'get_vidor_search_form');
+//add_action('get_search_form', 'get_vidor_search_form');
 
 /***
 function get_vidor_search_form() {
@@ -27,6 +27,17 @@ function get_vidor_search_form() {
 }
  * 
  */
+ 
+ 
+register_sidebar( array(
+	'name' => 'Footer Widget Area',
+	'id' => 'Footer-widget-area',
+	'description' => 'The Footer widget area',
+	'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+	'after_widget' => '</li>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+) );
 
 //for the menu description output
 class description_walker extends Walker_Nav_Menu {
